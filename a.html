@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Window A</title>
+  </head>
+  <body>
+    <h1>Window A</h1>
+    <script>
+      require('fs').appendFile('log.txt', '    A: ' + (new Date()).toISOString() + '\r\n', () => {});
+      nw.Window.open('b.html');
+
+      setTimeout(function () {
+        nw.Window.get().close();
+      }, 1000);
+    </script>
+  </body>
+</html>

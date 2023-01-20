@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Window C</title>
+  </head>
+  <body>
+    <h1>Window C</h1>
+    <script>
+      const fs = require('fs')
+      fs.appendFile('log.txt', '    C: ' + (new Date()).toISOString() + '\r\n', () => {});
+
+      setTimeout(function () {
+        // This is just here to add an empty return between runs in the log
+        fs.appendFile('log.txt', '\r\n', () => {});
+
+        setTimeout(function () {
+          nw.Window.get().close();
+        }, 500);
+      }, 500);
+    </script>
+  </body>
+</html>

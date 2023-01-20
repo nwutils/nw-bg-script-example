@@ -2,9 +2,15 @@
   "name": "bg-script-example",
   "version": "1.0.0",
   "description": "A demo of how JavaScript runs in NW.js",
-  "main": "index.html",
+  "main": "a.html",
+  "node-main": "main.js",
+  "bg-script": "bg.js",
   "scripts": {
+    "start": "nw .",
     "test": "nw ."
+  },
+  "devDependencies": {
+    "nw": "sdk"
   },
   "repository": {
     "type": "git",
@@ -16,7 +22,7 @@
     "JavaScript",
     "documentation"
   ],
-  "author": "TheJaredWilcurt",
+  "author": "The Jared Wilcurt",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nwutils/bg-script-example/issues"
