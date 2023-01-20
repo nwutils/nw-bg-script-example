@@ -1,0 +1,25 @@
+{
+  "name": "bg-script-example",
+  "version": "1.0.0",
+  "description": "A demo of how JavaScript runs in NW.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "nw ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwutils/bg-script-example.git"
+  },
+  "keywords": [
+    "NW.js",
+    "example",
+    "JavaScript",
+    "documentation"
+  ],
+  "author": "TheJaredWilcurt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nwutils/bg-script-example/issues"
+  },
+  "homepage": "https://github.com/nwutils/bg-script-example#readme"
+}
