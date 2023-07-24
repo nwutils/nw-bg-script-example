@@ -16,10 +16,10 @@ A demo of different ways to run JS in NW.js.
 1. `main.js` runs. It logs. It finishes running.
 1. `c.html` launches in a new window
 1. All CSS in Window C finishes being parsed but the DOM has not been parsed yet.
-1. A node process is spawned to run `start.js`, whent it logs is dependendent on system resources and may occur before or after Window C or `end.js` logs.
+1. A node process is spawned to run `start.js`, when it logs is dependendent on system resources and may occur before or after Window C or `end.js` logs.
 1. Window C's DOM finishes loading.
-1. A node process is spawned to run `end.js`, whent it logs is dependendent on system resources and may occur before or after Window C or `start.js` logs.
-1. Finally the inlined script block in Window C runs and it logs.
+1. A node process is spawned to run `end.js`, when it logs is dependendent on system resources and may occur before or after Window C or `start.js` logs.
+1. Finally the inlined script block in Window C runs and logs.
 1. Windows can now be closed
 
 **The log file looks like this:**
